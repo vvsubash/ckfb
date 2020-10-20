@@ -7,4 +7,4 @@ steps:
   args: ['build']
 - name: node
   entrypoint: yarn
-  args: ['run']
+  args: ['start']
