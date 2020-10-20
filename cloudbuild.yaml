@@ -1,10 +1,24 @@
 steps:
-- name: node
-  entrypoint: yarn
-  args: ['install']
-- name: node
-  entrypoint: yarn
-  args: ['build']
-- name: node
-  entrypoint: yarn
-  args: ['start']
+- id: docker build
+  name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/$PROJECT_ID/IMAGE', '.']
+- id: docker push
+  name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'gcr.io/$PROJECT_ID/IMAGE']
+- id: Deploy to Cloud Run
+  name: 'gcr.io/cloud-builders/gcloud'
+  args:
+  - beta
+  - run
+  - deploy
+  - SERVICE_NAME 
+  - --image
+  - gcr.io/$PROJECT_ID/IMAGE
+  - --region
+  - REGION # e.g. us-central1
+  - --platform
+  - managed
+  - --allow-unauthenticated
+
+images:
+- gcr.io/$PROJECT_ID/IMAGE
