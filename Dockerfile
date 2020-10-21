@@ -8,6 +8,6 @@ RUN yarn
 COPY . .
 EXPOSE 3000
 
-RUN yarn build
+RUN yarn build -m
 
 CMD [ "yarn", "start" ]

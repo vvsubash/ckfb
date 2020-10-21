@@ -12,12 +12,9 @@ export default {
       try {
         const authProvider = new firebase.auth.GoogleAuthProvider()
 
-        await this.$fireAuth
-          .signInWithRedirect(authProvider)
-          .then((result) => {
-            alert(result.uid)
-          })
-          .catch((err) => {})
+        await this.$fireAuth.signInWithRedirect(authProvider).then((result) => {
+          alert(result.uid)
+        })
       } catch (error) {
         alert(error)
       }
