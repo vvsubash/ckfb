@@ -1,10 +1,10 @@
 const ignorePaths = ["\u002F__webpack_hmr","\u002F_loading","\u002F_nuxt\u002F"]
 
 importScripts(
-  'https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js'
+  'https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js'
 )
 importScripts(
-  'https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js'
+  'https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js'
 )
 firebase.initializeApp({"apiKey":"AIzaSyClROcsRrW6N9ZA2lAFyCjUBFUz6YjOq14","authDomain":"saveechi99.firebaseapp.com","databaseURL":"https:\u002F\u002Fsaveechi99.firebaseio.com","projectId":"saveechi99","storageBucket":"saveechi99.appspot.com","messagingSenderId":"501294575118","appId":"1:501294575118:web:3f13a6e435cbdfcecf565f","measurementId":"G-LRNEPNYZ7M"})
 
