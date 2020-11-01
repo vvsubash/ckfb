@@ -1,11 +1,11 @@
 <template>
   <div>
-    <v-btn @click="logIn">{{ $fireAuth.currentUser || 'hi' }}</v-btn>
+    <v-btn @click="logIn">{{ $fire.auth.currentUser || 'hi' }}</v-btn>
   </div>
 </template>
 
 <script>
-import * as firebase from 'firebase/app'
+import firebase from 'firebase/app'
 export default {
   methods: {
     async logIn() {
