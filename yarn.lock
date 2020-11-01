@@ -1822,14 +1822,14 @@
     webpack-node-externals "^2.5.2"
     webpackbar "^4.0.0"
 
-"@nuxtjs/firebase@^6.1.1":
-  version "6.1.1"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/firebase/-/firebase-6.1.1.tgz#bb8d7d58e2df4a6d72eee6961880cdfbd93ab900"
-  integrity sha512-dcuK+sM5gtQ8EqfNOYWQHag76d41B8ca7CUvrVpG6QHXOkOOb/RgSGqKWYiz+DTUcskDMfrOXXv2HFYFVqoWmg==
+"@nuxtjs/firebase@^7.0.0":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/firebase/-/firebase-7.0.0.tgz#26a527c7f3d2a4a4205f59b7a306ea5ee6fd1be6"
+  integrity sha512-DHfvp6CqKgkIfm2Y2ZCPUTVFfmCZS+J3TP92mCDHmhSALQxqfkX/x629VsBaw1Zfm040jizLtHElT9IlxYecSQ==
   dependencies:
-    consola "^2.14.0"
+    consola "^2.15.0"
   optionalDependencies:
-    firebase-admin "^9.0.0"
+    firebase-admin "^9.3.0"
 
 "@nuxtjs/pwa@^3.0.2":
   version "3.2.2"
@@ -5291,10 +5291,10 @@ find-up@^4.0.0, find-up@^4.1.0:
     locate-path "^5.0.0"
     path-exists "^4.0.0"
 
-firebase-admin@^9.0.0:
-  version "9.2.0"
-  resolved "https://registry.yarnpkg.com/firebase-admin/-/firebase-admin-9.2.0.tgz#df5176e2d0c5711df6dbf7012320492a703538ea"
-  integrity sha512-LhnMYl71B4gP1FlTLfwaYlOWhBCAcNF+byb2CPTfaW/T4hkp4qlXOgo2bws/zbAv5X9GTFqGir3KexMslVGsIA==
+firebase-admin@^9.3.0:
+  version "9.3.0"
+  resolved "https://registry.yarnpkg.com/firebase-admin/-/firebase-admin-9.3.0.tgz#05f3efb1bb97f17b2c562f4b59820a381d2f903f"
+  integrity sha512-qMUITOp2QKLLc2o0/wSiDC2OO2knejjieZN/8Or9AzfFk8ftTcUKq5ALNlQXu+7aUzGe0IwSJq9TVnkIU0h1xw==
   dependencies:
     "@firebase/database" "^0.6.10"
     "@firebase/database-types" "^0.5.2"
