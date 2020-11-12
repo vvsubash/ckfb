@@ -10,7 +10,7 @@ export default {
   methods: {
     async logIn() {
       try {
-        const authProvider = await $fire.GoogleAuthProvider()
+        const authProvider = await this.$fire.GoogleAuthProvider()
 
         await this.$fire.auth
           .signInWithRedirect(authProvider)
