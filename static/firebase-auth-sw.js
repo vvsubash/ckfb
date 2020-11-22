@@ -8,6 +8,9 @@ importScripts(
 )
 firebase.initializeApp({"apiKey":"AIzaSyClROcsRrW6N9ZA2lAFyCjUBFUz6YjOq14","authDomain":"saveechi99.firebaseapp.com","databaseURL":"https:\u002F\u002Fsaveechi99.firebaseio.com","projectId":"saveechi99","storageBucket":"saveechi99.appspot.com","messagingSenderId":"501294575118","appId":"1:501294575118:web:3f13a6e435cbdfcecf565f","measurementId":"G-LRNEPNYZ7M"})
 
+// Initialize authService
+const authService = firebase.auth()
+
 /**
  * Returns a promise that resolves with an ID token if available.
  * @return {!Promise<?string>} The promise that resolves with an ID token if
@@ -15,7 +18,7 @@ firebase.initializeApp({"apiKey":"AIzaSyClROcsRrW6N9ZA2lAFyCjUBFUz6YjOq14","auth
  */
 const getIdToken = () => {
   return new Promise((resolve) => {
-    const unsubscribe = firebase.auth().onAuthStateChanged((user) => {
+    const unsubscribe = authService.onAuthStateChanged((user) => {
       unsubscribe()
       if (user) {
         // force token refresh as it might be used to sign in server side
